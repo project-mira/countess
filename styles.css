@@ -1,0 +1,338 @@
+/* fonts preload */
+@font-face {
+    font-family: "BogleWeb-Black";
+    src: url("https://altoapp.net/assets/typefaces/bogle_std/BogleWeb-Black.eot");
+    src: url("https://altoapp.net/assets/typefaces/bogle_std/BogleWeb-Black.eot?#iefix") format("embedded-opentype"),
+    url("https://altoapp.net/assets/typefaces/bogle_std/BogleWeb-Black.woff2") format("woff2"),
+    url("https://altoapp.net/assets/typefaces/bogle_std/BogleWeb-Black.woff") format("woff"),
+    url("https://altoapp.net/assets/typefaces/bogle_std/BogleWeb-Black.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "BogleWeb-BlackItalic";
+    src: url("https://altoapp.net/assets/typefaces/bogle_std/BogleWeb-BlackItalic.eot");
+    src: url("https://altoapp.net/assets/typefaces/bogle_std/BogleWeb-BlackItalic.eot?#iefix") format("embedded-opentype"),
+    url("https://altoapp.net/assets/typefaces/bogle_std/BogleWeb-BlackItalic.woff2") format("woff2"),
+    url("https://altoapp.net/assets/typefaces/bogle_std/BogleWeb-BlackItalic.woff") format("woff"),
+    url("https://altoapp.net/assets/typefaces/bogle_std/BogleWeb-BlackItalic.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "BogleWeb-Bold";
+    src: url("https://altoapp.net/assets/typefaces/bogle_std/BogleWeb-Bold.eot");
+    src: url("https://altoapp.net/assets/typefaces/bogle_std/BogleWeb-Bold.eot?#iefix") format("embedded-opentype"),
+    url("https://altoapp.net/assets/typefaces/bogle_std/BogleWeb-Bold.woff2") format("woff2"),
+    url("https://altoapp.net/assets/typefaces/bogle_std/BogleWeb-Bold.woff") format("woff"),
+    url("https://altoapp.net/assets/typefaces/bogle_std/BogleWeb-Bold.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "BogleWeb-BoldItalic";
+    src: url("https://altoapp.net/assets/typefaces/bogle_std/BogleWeb-BoldItalic.eot");
+    src: url("https://altoapp.net/assets/typefaces/bogle_std/BogleWeb-BoldItalic.eot?#iefix") format("embedded-opentype"),
+    url("https://altoapp.net/assets/typefaces/bogle_std/BogleWeb-BoldItalic.woff2") format("woff2"),
+    url("https://altoapp.net/assets/typefaces/bogle_std/BogleWeb-BoldItalic.woff") format("woff"),
+    url("https://altoapp.net/assets/typefaces/bogle_std/BogleWeb-BoldItalic.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "BogleWeb-Regular";
+    src: url("https://altoapp.net/assets/typefaces/bogle_std/BogleWeb-Regular.eot");
+    src: url("https://altoapp.net/assets/typefaces/bogle_std/BogleWeb-Regular.eot?#iefix") format("embedded-opentype"),
+    url("https://altoapp.net/assets/typefaces/bogle_std/BogleWeb-Regular.woff2") format("woff2"),
+    url("https://altoapp.net/assets/typefaces/bogle_std/BogleWeb-Regular.woff") format("woff"),
+    url("https://altoapp.net/assets/typefaces/bogle_std/BogleWeb-Regular.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "BogleWeb-RegularItalic";
+    src: url("https://altoapp.net/assets/typefaces/bogle_std/BogleWeb-RegularItalic.eot");
+    src: url("https://altoapp.net/assets/typefaces/bogle_std/BogleWeb-RegularItalic.eot?#iefix") format("embedded-opentype"),
+    url("https://altoapp.net/assets/typefaces/bogle_std/BogleWeb-RegularItalic.woff2") format("woff2"),
+    url("https://altoapp.net/assets/typefaces/bogle_std/BogleWeb-RegularItalic.woff") format("woff"),
+    url("https://altoapp.net/assets/typefaces/bogle_std/BogleWeb-RegularItalic.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* general styles */
+
+@media (prefers-color-scheme: light) {
+    :root {
+        color-scheme: light;
+
+        --color-text: #000;
+        --color-black: #000;
+        --color-white: #fff;
+        --color-text-alt: #222;
+        --color-background: #fff;
+        --color-background-alt: #ddd;
+        --accent-color-1: #041F41;
+        --accent-color-2: #007bff;
+        --accent-color-s1: #041F41;
+        --accent-color-s2: #007bff;
+        --accent-color-mod: #fff;
+        --text-box-bg: #ddd;
+        --text-box-fg: #ccc;
+    }
+
+    .app-icon {
+        content:url(/assets/countess_t2.png);
+    }
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        color-scheme: dark;
+        
+        --color-text: #fff;
+        --color-black: #000;
+        --color-white: #fff;
+        --color-text-alt: #ddd;
+        --color-background: #000;
+        --color-background-alt: #222;
+        --accent-color-1: #007bff;
+        --accent-color-2: #041F41;
+        --accent-color-s1: #041F41;
+        --accent-color-s2: #007bff;
+        --accent-color-mod: #041F41;
+        --text-box-bg: #ddd;
+        --text-box-fg: #ccc;
+    }
+
+    .app-icon {
+        content:url(/assets/countess_t1.png);
+    }
+}
+
+
+* {
+    touch-action: manipulation;
+}
+
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'BogleWeb-Regular', Arial, sans-serif;
+    background-color: var(--color-background);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+    user-select: none;
+    -webkit-tap-highlight-color: transparent;
+}
+
+img {
+    pointer-events: none;
+}
+
+#app {
+    width: 100%;
+    max-width: 400px;
+    padding: 20px;
+    background-color: var(--color-background);
+    border-radius: 48px;
+}
+
+.screen {
+    display: none;
+    text-align: center;
+}
+
+.screen.active {
+    display: block;
+}
+
+.screen.active h1 {
+    margin: 0 0 5.5em 0;
+    font-family: 'BogleWeb-Black', Arial, sans-serif;
+    color: var(--accent-color-1);
+    font-size: 3em;
+}
+
+.hidden {
+    display: none;
+}
+
+.app-icon {
+    width: 128px;
+    height: 128px;
+}
+
+button {
+    font-family: 'BogleWeb-Regular', Arial, sans-serif;
+    padding: .5em;
+    margin: .5em 0;
+    color: var(--color-background);
+    border: none;
+    border-radius: 12em;
+    font-size: 1.5em;
+}
+
+.back-button {
+    font-family: 'bootstrap-icons', 'BogleWeb-Regular', Arial, sans-serif;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    padding: 7.5px 22.5px;
+    margin: 10px;
+    color: var(--color-white) !important;
+    background-color: var(--accent-color-1) !important;
+    border: none;
+    border-radius: 10em;
+    z-index: 1000;
+}
+
+#intro-screen button {
+    background-color: var(--accent-color-1);
+    width: 49.25%;
+    font-weight: 600;
+}
+
+#registers button, #self-checkouts button {
+    background-color: var(--accent-color-1);
+    color: var(--color-white);
+    font-weight: 600;
+}
+
+#intro-screen p {
+    background-color: var(--accent-color-1);
+    color: var(--accent-color-mod);
+    font-size: 0.75em;
+    border-radius: 10em;
+    padding: .5em 0;
+    margin: .5em 0;
+    font-size: 1.5em;
+}
+
+#other p {
+    background-color: var(--accent-color-1);
+    color: var(--color-white);
+    font-size: 0.75em;
+    border-radius: 10em;
+    padding: .5em 1em;
+    margin: .5em 0;
+    font-size: 1.25em;
+}
+
+#registers p {
+    color: var(--accent-color-1);
+    font-size: 0.75em;
+    border-radius: 10em;
+    padding: .5em 1em;
+    margin: .5em 0;
+    font-size: 1.25em;
+}
+
+#counter {
+    color: var(--accent-color-1);
+    font-size: 5em;
+    font-family: 'BogleWeb-Regular', Courier, monospace;
+    font-weight: 700;
+}
+
+.counter-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 2em;
+}
+
+.counter-container button {
+    line-height: 0;
+    font-size: 2em;
+    font-family: "bootstrap-icons";
+    background-color: var(--accent-color-1);
+    color: var(--color-white);
+}
+
+input {
+    width: 75%;
+    padding: 10px;
+    margin: 10px;
+    border: 1px solid var(--accent-color-2);
+    border-radius: 4px;
+}
+
+input[type="number"] {
+    background-color: var(--accent-color-1);
+    border: solid var(--accent-color-2) 3px;
+    border-radius: 10em;
+    color: var(--color-white);
+    font-family: 'BogleWeb-Regular', Arial, sans-serif;
+    font-size: 2.25em;
+    text-align: center;
+    border: none;
+    outline: none;
+}
+
+input[type="number"]::placeholder {
+    color: var(--color-white);
+}
+
+.list-container {
+    overflow-y: auto;
+    max-height: 60vh;
+    width: 20em;
+}
+
+#registers-list, #self-checkouts-list {
+    text-align: left;
+}
+
+#registers-list div, #self-checkouts-list div {
+    display: flex;
+    align-items: center;
+    max-width: 6em;
+}
+
+input[type="checkbox"] {
+    appearance: none;
+    -webkit-appearance: none;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    font-size: 2rem;
+    padding: 0.1rem;
+    border: 0.25rem solid var(--accent-color-1);
+    border-radius: 0.5rem;
+}
+
+input[type="checkbox"] {
+    width: 1em;
+    height: 1em;
+    accent-color: var(--accent-color-1);
+}
+
+input[type="checkbox"]::before {
+    content: "";
+    width: 1.4rem;
+    height: 1.4rem;
+    clip-path: polygon(20% 0%, 0% 20%, 30% 50%, 0% 80%, 20% 100%, 50% 70%, 80% 100%, 100% 80%, 70% 50%, 100% 20%, 80% 0%, 50% 30%);
+    transform: scale(0);
+    background-color: var(--accent-color-1);
+}
+
+input[type="checkbox"]:checked::before {
+    transform: scale(1);
+}
+
+
+label {
+    white-space: nowrap;
+    font-family: 'BogleWeb-Regular', Arial, sans-serif;
+    font-size: 2em;
+    color: var(--accent-color-1);
+}

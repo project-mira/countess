@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Countess</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="./bootstrap-icons/bootstrap-icons.css">
+</head>
+<body>
+    <div id="app">
+        <div id="intro-screen" class="screen">
+            <img src="/assets/countess.png" alt="icon" class="app-icon">
+            <h1>Countess</h1>
+            <p>What do you want to count today?</p>
+            <button onclick="showScreen('basic-counter')">Basic</button>
+            <button onclick="showScreen('registers')">Registers</button>
+            <button onclick="showScreen('self-checkouts')">Self Checkouts</button>
+            <button onclick="showScreen('other')">Other</button>
+        </div>
+
+        <div id="basic-counter" class="screen hidden">
+            <button class="back-button" onclick="showScreen('intro-screen')">&#xF284; Back</button>
+            <div class="counter-container">
+                <button onclick="incrementCounter(1)" class="bi bi-chevron-up"></button>
+                <span id="counter">0</span>
+                <button onclick="incrementCounter(-1)" class="bi bi-chevron-down"></button>
+            </div>
+        </div>
+
+        <div id="registers" class="screen hidden">
+            <button class="back-button" onclick="showScreen('intro-screen')">&#xF284; Back</button>
+            <p>How many registers are in your store?</p>
+            <input type="number" id="registers-input" placeholder="..." min="1">
+            <button onclick="showRegisters()">Submit</button>
+            <div id="registers-list" class="content list-container hidden"></div>
+        </div>
+
+        <div id="self-checkouts" class="screen hidden">
+            <button class="back-button" onclick="showScreen('intro-screen')">&#xF284; Back</button>
+            <div id="self-checkout-inputs">
+                <p>What is the register number of the first self-checkout?</p>
+                <input type="number" id="self-checkout-start" min="1" placeholder="...">
+                <p>What is the register number of the last self-checkout?</p>
+                <input type="number" id="self-checkout-end" min="1" placeholder="...">
+                <button onclick="showSelfCheckouts()">Submit</button>
+            </div>
+            <div id="self-checkouts-list" class="content list-container hidden"></div>
+        </div>
+
+        <div id="other" class="screen hidden">
+            <button class="back-button" onclick="showScreen('intro-screen')">&#xF284; Back</button>
+            <p>Other counting feature coming soon...</p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
